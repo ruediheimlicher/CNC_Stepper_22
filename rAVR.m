@@ -8938,7 +8938,7 @@ return returnInt;
    if (AVR_USBStatus)
    {
       //NSLog(@"SchnittdatenArray 0: %@",[SchnittdatenArray description]);
-      
+      // Richtung feststellen
       if (([[[SchnittdatenArray objectAtIndex:0]objectAtIndex:1]intValue] <= 0x7F) || ([[[SchnittdatenArray objectAtIndex:0]objectAtIndex:9]intValue] <= 0x7F))
       {
          [AnschlagLinksIndikator setTransparent:YES];
@@ -9006,6 +9006,7 @@ return returnInt;
       [CNC_Stoptaste setState:0];
       [PositionFeld setIntValue:0];
       [ProfilGraph setStepperposition:0];
+      [ProfilGraph setNeedsDisplay:YES];
       
       //NSLog(@"reportUSB_sendArray cncposition: %d \nSchnittdatenArray: %@",cncposition,[[SchnittdatenArray objectAtIndex:0]description]);
       // Array an USB schicken
@@ -9087,19 +9088,33 @@ return returnInt;
       if ([[[note userInfo]objectForKey:@"outposition"]intValue] > [PositionFeld intValue])
       {
          [PositionFeld setIntValue:[[[note userInfo]objectForKey:@"outposition"]intValue]];
-         [ProfilGraph setStepperposition:[[[note userInfo]objectForKey:@"outposition"]intValue]];
+//         [ProfilGraph setStepperposition:[[[note userInfo]objectForKey:@"outposition"]intValue]];
          //[ProfilGraph setNeedsDisplay:YES];
       }
+      uint16_t stepperposition = [[[note userInfo]objectForKey:@"stepperposition"]intValue]-1;
+      [CNCPositionFeld setIntValue:stepperposition];
+
        if ([[[note userInfo]objectForKey:@"stepperposition"]intValue] > [CNCPositionFeld intValue])
        {
-         [CNCPositionFeld setIntValue:[[[note userInfo]objectForKey:@"stepperposition"]intValue]];
+         [CNCPositionFeld setIntValue:[[[note userInfo]objectForKey:@"stepperposition"]intValue]-1];
        
   // diff        
-          //[ProfilGraph setStepperposition:[[[note userInfo]objectForKey:@"stepperposition"]intValue]];
+          [ProfilGraph setStepperposition:[[[note userInfo]objectForKey:@"stepperposition"]intValue]-1];
           //[ProfilGraph setNeedsDisplay:YES];
        }
    }
    
+   if ([[note userInfo]objectForKey:@"intervallh"] && [[note userInfo]objectForKey:@"intervalll"])
+   {
+      uint8_t intervallH = (uint8_t)[[[note userInfo]objectForKey:@"intervallh"]intValue];
+      
+      uint8_t intervallL = (uint8_t)[[[note userInfo]objectForKey:@"intervalll"]intValue];
+     // NSLog(@"USBReadAktion intervallH: %d intervallL: %d",intervallH,intervallL);
+      uint16_t timerintervall =  intervallH << 8 | intervallL;
+     // NSLog(@"USBReadAktion timerintervall: %d",timerintervall);
+      [TimerIntervallFeld setIntValue:timerintervall];
+   }
+
    if ([[[note userInfo]objectForKey:@"slaveversion"]intValue])
    {
       int slaveversionint =[[[note userInfo]objectForKey:@"slaveversion"]intValue];
@@ -9122,8 +9137,27 @@ return returnInt;
       NSLog(@"AVR USBReadAktion abschnittfertig: %@",[[note userInfo]objectForKey:@"abschnittfertig"]);
 
       int abschnittfertig=[[[note userInfo]objectForKey:@"abschnittfertig"]intValue];
+      uint16_t stepperposition = [[[note userInfo]objectForKey:@"stepperposition"]intValue];
+      uint16_t anzsteps = [SchnittdatenArray count];
+ //     NSLog(@"USBReadAktion abschnittcode: %02X",abschnittcode);
+
+      if (abschnittcode >= 0xA0)
+      {
+         [CNC_busySpinner stopAnimation:NULL];
+      }
+
       switch (abschnittfertig)
       {
+         case 0xBD: // Abschnitt fertig // von Stepper_20
+            {
+               NSLog(@"AVR  USBReadAktion abschnittcode BD anzsteps: %d stepperposition: %d",anzsteps, stepperposition);
+               [ProfilGraph setStepperposition:stepperposition];
+               [ProfilGraph setNeedsDisplay:YES];
+               [self setBusy:NO];
+                NSBeep();
+               
+            }break;
+
          case 0xAA:
          {
             NSLog(@"AVR End Abschnitt von A");

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="18122" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="19529" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment version="1060" identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="18122"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="19529"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -81,6 +81,7 @@
                 <outlet property="SpeedStepper" destination="1689" id="1696"/>
                 <outlet property="StepperTab" destination="7" id="1159"/>
                 <outlet property="TestPfeiltaste" destination="1408" id="1411"/>
+                <outlet property="TimerIntervallFeld" destination="xeK-o8-c9h" id="nAT-9C-jxH"/>
                 <outlet property="USBKontrolle" destination="1467" id="1469"/>
                 <outlet property="VersionFeld" destination="1294" id="1299"/>
                 <outlet property="WertAXFeld" destination="1548" id="1802"/>
@@ -101,7 +102,7 @@
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" topStrut="YES"/>
             <rect key="contentRect" x="6" y="6" width="1263" height="741"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1415"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2304" height="1271"/>
             <value key="minSize" type="size" width="1238" height="720"/>
             <value key="maxSize" type="size" width="1263" height="750"/>
             <view key="contentView" id="6">
@@ -456,7 +457,7 @@
                                             </connections>
                                         </textField>
                                         <textField verticalHuggingPriority="750" fixedFrame="YES" tag="1005" translatesAutoresizingMaskIntoConstraints="NO" id="1710">
-                                            <rect key="frame" x="86" y="448" width="29" height="19"/>
+                                            <rect key="frame" x="88" y="441" width="29" height="19"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" drawsBackground="YES" id="1711">
                                                 <font key="font" metaFont="smallSystem"/>
@@ -734,7 +735,7 @@
                                             </connections>
                                         </stepper>
                                         <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1702">
-                                            <rect key="frame" x="15" y="448" width="75" height="18"/>
+                                            <rect key="frame" x="15" y="441" width="75" height="18"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="check" title="Abbrand" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="1703">
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -1391,7 +1392,7 @@
                                             </connections>
                                         </button>
                                         <textField verticalHuggingPriority="750" fixedFrame="YES" tag="1007" translatesAutoresizingMaskIntoConstraints="NO" id="2141">
-                                            <rect key="frame" x="45" y="475" width="35" height="19"/>
+                                            <rect key="frame" x="47" y="464" width="35" height="19"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" drawsBackground="YES" id="2142">
                                                 <font key="font" metaFont="smallSystem"/>
@@ -1400,7 +1401,7 @@
                                             </textFieldCell>
                                         </textField>
                                         <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2144">
-                                            <rect key="frame" x="-2" y="477" width="45" height="14"/>
+                                            <rect key="frame" x="-1" y="466" width="45" height="14"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="min Dist" id="2145">
                                                 <font key="font" metaFont="system" size="10"/>
@@ -1486,6 +1487,24 @@
                                             <rect key="frame" x="17" y="16" width="1205" height="362"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         </customView>
+                                        <textField verticalHuggingPriority="750" fixedFrame="YES" tag="1007" translatesAutoresizingMaskIntoConstraints="NO" id="xeK-o8-c9h">
+                                            <rect key="frame" x="47" y="481" width="35" height="19"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" drawsBackground="YES" id="lwR-wj-wGZ">
+                                                <font key="font" metaFont="smallSystem"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uOU-mB-cuI">
+                                            <rect key="frame" x="-1" y="483" width="45" height="14"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="timerint" id="822-0B-Hev">
+                                                <font key="font" metaFont="system" size="10"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
                                     </subviews>
                                 </view>
                             </tabViewItem>

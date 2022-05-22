@@ -308,6 +308,8 @@
    //int                     _kote;
    int                     KoteWert;
    
+   IBOutlet NSTextField*   TimerIntervallFeld; // TIMERINTERVALL des Teensy
+   
    IBOutlet id             Schalendickefeld;
    
    rProfildruckView*       Profilfeld;
