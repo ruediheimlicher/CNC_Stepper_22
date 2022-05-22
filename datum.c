@@ -1,0 +1,1 @@
+//datum.c#define DATUM "22.05.2022"
