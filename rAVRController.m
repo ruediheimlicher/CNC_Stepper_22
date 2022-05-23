@@ -912,10 +912,11 @@ private void button4_Click(object sender, EventArgs e)
                
             case 0xD0:
             {
-               NSLog(@"D0 letzter Abschnitt");
+               NSLog(@"\nD0 letzter Abschnitt");
                [NotificationDic setObject:AbschnittFertig forKey:@"abschnittfertig"];
+               
                NSNotificationCenter* nc=[NSNotificationCenter defaultCenter];
-//               [nc postNotificationName:@"usbread" object:self userInfo:NotificationDic];
+               [nc postNotificationName:@"usbread" object:self userInfo:NotificationDic];
                return;
             }break;
                

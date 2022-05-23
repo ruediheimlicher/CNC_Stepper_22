@@ -9082,7 +9082,7 @@ return returnInt;
 
 - (void)USBReadAktion:(NSNotification*)note
 {
-   //NSLog(@"AVR  USBReadAktion note: %@",[[note userInfo]description]);
+   NSLog(@"22 AVR  USBReadAktion note: %@",[[note userInfo]description]);
    if ([[note userInfo]objectForKey:@"inposition"])
    {
       if ([[[note userInfo]objectForKey:@"outposition"]intValue] > [PositionFeld intValue])
@@ -9100,7 +9100,7 @@ return returnInt;
        
   // diff        
           [ProfilGraph setStepperposition:[[[note userInfo]objectForKey:@"stepperposition"]intValue]-1];
-          //[ProfilGraph setNeedsDisplay:YES];
+          [ProfilGraph setNeedsDisplay:YES];
        }
    }
    
@@ -9141,13 +9141,20 @@ return returnInt;
       uint16_t anzsteps = [SchnittdatenArray count];
  //     NSLog(@"USBReadAktion abschnittcode: %02X",abschnittcode);
 
-      if (abschnittcode >= 0xA0)
+      if (abschnittfertig >= 0xA0)
       {
          [CNC_busySpinner stopAnimation:NULL];
       }
 
       switch (abschnittfertig)
       {
+         case 0xD0: // letzter Abschnitt
+         {
+            NSLog(@"AVR  USBReadAktion abschnittcode D0 anzsteps: %d stepperposition: %d",anzsteps, stepperposition);
+            [ProfilGraph setStepperposition:stepperposition-1];
+            [ProfilGraph setNeedsDisplay:YES];
+            
+         }break;
          case 0xBD: // Abschnitt fertig // von Stepper_20
             {
                NSLog(@"AVR  USBReadAktion abschnittcode BD anzsteps: %d stepperposition: %d",anzsteps, stepperposition);
