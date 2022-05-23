@@ -765,7 +765,7 @@ return returnInt;
 
             if ([tempPListDic objectForKey:@"einlauftiefe"])
             {
-               //NSLog(@"einlauftiefe: %d",[[tempPListDic objectForKey:@"einlauftiefe"]intValue]);
+               NSLog(@"einlauftiefe: %d",[[tempPListDic objectForKey:@"einlauftiefe"]intValue]);
                [Einlauftiefe setIntValue:[[tempPListDic objectForKey:@"einlauftiefe"]intValue]];
                
             }
@@ -6000,11 +6000,11 @@ return returnInt;
    {
       // Endleistenwinkel bestimmen
       float winkelA = [CNC EndleistenwinkelvonProfil:[ProfilDic objectForKey:@"profil1array"]];
-     // NSLog(@"Endleistenwinkel A: %2.2f",winkelA*180/M_PI);
+     NSLog(@"Endleistenwinkel A: %2.2f",winkelA*180/M_PI);
 
       //float winkelB = [CNC EndleistenwinkelvonProfil:[ProfilDic objectForKey:@"profil2array"]];
       float winkelB = [CNC EndleistenwinkelvonProfil:Profil2Array];
-      //NSLog(@"Endleistenwinkel B: %2.2f",winkelB*180/M_PI);
+      NSLog(@"Endleistenwinkel B: %2.2f",winkelB*180/M_PI);
 
      // if ([OberseiteCheckbox state]&& (![OberseiteCheckbox state]))
       if (mitOberseite && (!mitUnterseite)) 
@@ -6012,11 +6012,11 @@ return returnInt;
          //if (flipV)
          //winkel *= -1;
       }
-      
+      //einlauftiefe = 15; // 220523: war 0 in PList
       // Koordinaten der Einlauflinie: nur x,y
       NSArray* EndleistenEinlaufArrayA=[CNC EndleisteneinlaufMitWinkel:winkelA mitLaenge:einlauflaenge mitTiefe:einlauftiefe];
       NSArray* EndleistenEinlaufArrayB=[CNC EndleisteneinlaufMitWinkel:winkelB mitLaenge:einlauflaenge mitTiefe:einlauftiefe];
-      //NSLog(@"AVR EndleistenEinlaufArrayA: %@",[EndleistenEinlaufArrayA description]);
+      NSLog(@"AVR EndleistenEinlaufArrayA: %@",[EndleistenEinlaufArrayA description]);
       int k=0;
       for(k=1;k<[EndleistenEinlaufArrayA count];k++)
       {
@@ -6042,6 +6042,7 @@ return returnInt;
          {
             [tempZeilenDic setObject:[NSNumber numberWithInt:origpwm] forKey:@"pwm"];
          }
+         
          
          float tempbx = [[[EndleistenEinlaufArrayB objectAtIndex:k]objectAtIndex:0]floatValue];
          float tempby = [[[EndleistenEinlaufArrayB objectAtIndex:k]objectAtIndex:1]floatValue];
@@ -8809,7 +8810,7 @@ return returnInt;
    [CNC_Eingabe doProfilSpiegelnVertikalTask];
    [CNC_Eingabe doProfilEinfuegenTask];
    [CNC_Eingabe doSchliessenTask];
-   
+  
    //   [CNC_BlockKonfigurierenTaste performClick:NULL];
    
    [CNC_BlockAnfuegenTaste performClick:NULL]; 

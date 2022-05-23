@@ -52,6 +52,9 @@
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		BD02E9EA14533E1000F73AC5 /* CNC_Eingabe.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD02E9E914533E1000F73AC5 /* CNC_Eingabe.xib */; };
 		BD13BD4E161C3B4C0007641E /* USBWindowController.h in Headers */ = {isa = PBXBuildFile; fileRef = BD13BD4D161C3B4C0007641E /* USBWindowController.h */; };
+		BD2EA0F3283B84E100429E18 /* Taste_red.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BD2EA0F0283B84E000429E18 /* Taste_red.jpg */; };
+		BD2EA0F4283B84E100429E18 /* Taste_blue.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BD2EA0F1283B84E100429E18 /* Taste_blue.jpg */; };
+		BD2EA0F5283B84E100429E18 /* Taste_green.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BD2EA0F2283B84E100429E18 /* Taste_green.jpg */; };
 		BD48ADE713E41A5000A29634 /* hid.m in Sources */ = {isa = PBXBuildFile; fileRef = BD48ADE613E41A5000A29634 /* hid.m */; };
 		BD5F0DBA1428771E004963DA /* rElement.h in Headers */ = {isa = PBXBuildFile; fileRef = BD5F0DB81428771E004963DA /* rElement.h */; };
 		BD5F0DBB1428771E004963DA /* rElement.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5F0DB91428771E004963DA /* rElement.m */; };
@@ -125,6 +128,9 @@
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		BD02E9E914533E1000F73AC5 /* CNC_Eingabe.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CNC_Eingabe.xib; sourceTree = "<group>"; };
 		BD13BD4D161C3B4C0007641E /* USBWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USBWindowController.h; sourceTree = "<group>"; };
+		BD2EA0F0283B84E000429E18 /* Taste_red.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Taste_red.jpg; sourceTree = "<group>"; };
+		BD2EA0F1283B84E100429E18 /* Taste_blue.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Taste_blue.jpg; sourceTree = "<group>"; };
+		BD2EA0F2283B84E100429E18 /* Taste_green.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Taste_green.jpg; sourceTree = "<group>"; };
 		BD48ADE613E41A5000A29634 /* hid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = hid.m; sourceTree = "<group>"; };
 		BD5F0DB81428771E004963DA /* rElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rElement.h; sourceTree = "<group>"; };
 		BD5F0DB91428771E004963DA /* rElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = rElement.m; sourceTree = "<group>"; };
@@ -259,6 +265,9 @@
 		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
+				BD2EA0F1283B84E100429E18 /* Taste_blue.jpg */,
+				BD2EA0F2283B84E100429E18 /* Taste_green.jpg */,
+				BD2EA0F0283B84E000429E18 /* Taste_red.jpg */,
 				BDF4A3A4264578A200055DF2 /* notok_image.png */,
 				BDF4A3A3264578A100055DF2 /* ok_image.png */,
 				BDE4125E15691DA700258808 /* Halt_alt.jpg */,
@@ -392,6 +401,7 @@
 				1B1708AC0B83B5B000413DE4 /* Templ in Resources */,
 				1B879EB50D620A01004B8F4C /* AVR.nib in Resources */,
 				1B61B39D0E2A0D0000C3CCF8 /* USB.icns in Resources */,
+				BD2EA0F4283B84E100429E18 /* Taste_blue.jpg in Resources */,
 				1B415E68139D1FCB00830E9F /* Logfile.txt in Resources */,
 				1B7370B213B1257000577F0B /* pfeil_rechts.jpg in Resources */,
 				BD62888928142B760009B5D5 /* USB_Stepper 22.txt in Resources */,
@@ -399,6 +409,7 @@
 				1B73718613B2531600577F0B /* pfeil_links.jpg in Resources */,
 				1B73718713B2531600577F0B /* pfeil_up.jpg in Resources */,
 				BD02E9EA14533E1000F73AC5 /* CNC_Eingabe.xib in Resources */,
+				BD2EA0F3283B84E100429E18 /* Taste_red.jpg in Resources */,
 				BDF4A3A5264578A200055DF2 /* ok_image.png in Resources */,
 				BD7179441467CF8C00C6EA2A /* pfeil_down_mini.jpg in Resources */,
 				BD7179471467D31400C6EA2A /* Pfeildown.ico in Resources */,
@@ -407,6 +418,7 @@
 				BDF4A3A6264578A200055DF2 /* notok_image.png in Resources */,
 				BD71794D1467D53300C6EA2A /* pfeil_links_mini.jpg in Resources */,
 				BD8234D9149DD0D300BE2EA2 /* stop.jpg in Resources */,
+				BD2EA0F5283B84E100429E18 /* Taste_green.jpg in Resources */,
 				BDF6979414A4453A0064B748 /* Halt.jpg in Resources */,
 				BDF6979914A44AB40064B748 /* home.jpg in Resources */,
 				BDD6466814A7BC7800EF532E /* punkt_rot.jpg in Resources */,
