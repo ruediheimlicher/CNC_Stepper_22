@@ -150,7 +150,7 @@ float det(float v0[],float v1[])
       NSMutableDictionary* attributes=[[NSMutableDictionary alloc]init];
       [attributes setObject:[NSFont fontWithName:@"Helvetica" size:20] forKey:NSFontAttributeName];
       [attributes setObject:[NSColor blueColor] forKey:NSForegroundColorAttributeName];
-      NSLog(@"titel: %@",titel);
+      //NSLog(@"titel: %@",titel);
      // [titel drawAtPoint:NSMakePoint(40, 40) withAttributes:attributes];
    }
    
@@ -440,7 +440,7 @@ float det(float v0[],float v1[])
 
 - (void)mouseUp:(NSEvent *)event
 {
-   NSLog(@"Pfeiltaste mouseup");
+   //NSLog(@"Pfeiltaste mouseup");
    richtung=[self tag];
    //NSLog(@"AVR mouseUp Pfeiltaste richtung: %d",richtung);
    /*
@@ -765,7 +765,7 @@ return returnInt;
 
             if ([tempPListDic objectForKey:@"einlauftiefe"])
             {
-               NSLog(@"einlauftiefe: %d",[[tempPListDic objectForKey:@"einlauftiefe"]intValue]);
+               //NSLog(@"einlauftiefe: %d",[[tempPListDic objectForKey:@"einlauftiefe"]intValue]);
                [Einlauftiefe setIntValue:[[tempPListDic objectForKey:@"einlauftiefe"]intValue]];
                
             }
@@ -859,7 +859,7 @@ return returnInt;
       }    
       
 
-      NSLog(@"readCNC_PList: pwm: %2.2f speed: %d",[DC_PWM floatValue],[SpeedFeld  intValue]);
+     // NSLog(@"readCNC_PList: pwm: %2.2f speed: %d",[DC_PWM floatValue],[SpeedFeld  intValue]);
 		//	NSLog(@"PListOK: %d",PListOK);
 		
 	
@@ -1365,8 +1365,8 @@ return returnInt;
 - (void)usbattachAktion:(NSNotification*)note
 {
    int status = [[[note userInfo]objectForKey:@"attach"]intValue];
-   NSLog(@"AVR usbattachAktion status: %d",status);
-   NSLog(@"usbstatus: %d",usbstatus);
+   //NSLog(@"AVR usbattachAktion status: %d",status);
+   //NSLog(@"usbstatus: %d",usbstatus);
    if (status == USBREMOVED)
    {
       //USB_OK_Feld.image = notok_image
@@ -1475,7 +1475,7 @@ return returnInt;
 				
 			case 3:		//	read-Report		
 				anzBytes=[byte1 intValue];	//Anz Daten im Report
-				NSLog(@"read Report: anzBytes: %d",anzBytes);
+				//NSLog(@"read Report: anzBytes: %d",anzBytes);
 				for (i=0;i<anzBytes;i++)
 				{
 					
@@ -1493,7 +1493,7 @@ return returnInt;
 		{
 			
 			NSArray* bitnummerArray=[NSArray arrayWithObjects: @"null", @"eins",@"zwei",@"drei",@"vier",@"fuenf",@"++",@"++",nil];
-			NSLog(@"CallBackAktion Eingangsdaten: %@ \nAnz: %d",[Eingangsdaten description],[Eingangsdaten count]);
+			//NSLog(@"CallBackAktion Eingangsdaten: %@ \nAnz: %d",[Eingangsdaten description],[Eingangsdaten count]);
         
 			// EEPROMbalken der letzten Zeile anzeigen. Meist ist nur eine Zeile vorhanden.
 			NSMutableArray* tempEEPROMArray=[[NSMutableArray alloc]initWithCapacity:0];
@@ -1519,7 +1519,7 @@ return returnInt;
 						
 					}
 				}
-				NSLog(@"k: %d tempReportDic: %@",k,[tempReportDic description]);
+				//NSLog(@"k: %d tempReportDic: %@",k,[tempReportDic description]);
 				[EEPROMArray addObject:tempReportDic];
 				
 			}
@@ -1543,11 +1543,11 @@ return returnInt;
 
 - (IBAction)showEinstellungen:(id)sender
 {
-   NSLog(@"showEinstellungenFenster");
+   //NSLog(@"showEinstellungenFenster");
 	if (!CNC_Eingabe)
 	{
 		//[self Alert:@"showEinstellungenFenster vor init"];
-		NSLog(@"showEinstellungenFenster neu");
+		//NSLog(@"showEinstellungenFenster neu");
 		
 		CNC_Eingabe=[[rEinstellungen alloc]init];
 		
@@ -1672,7 +1672,7 @@ return returnInt;
    
    //NSArray* tempLinienArray = [CNC LinieVonPunkt:NSMakePoint(25,25) mitLaenge:15 mitWinkel:30];
    //NSLog(@"tempLinienArray: %@",tempLinienArray);
-   	NSLog(@"reportStartKnopf state: %d",[sender state]);
+   	//NSLog(@"reportStartKnopf state: %d",[sender state]);
 	
    if ([sender state])
 	{
@@ -6000,11 +6000,11 @@ return returnInt;
    {
       // Endleistenwinkel bestimmen
       float winkelA = [CNC EndleistenwinkelvonProfil:[ProfilDic objectForKey:@"profil1array"]];
-     NSLog(@"Endleistenwinkel A: %2.2f",winkelA*180/M_PI);
+     //NSLog(@"Endleistenwinkel A: %2.2f",winkelA*180/M_PI);
 
       //float winkelB = [CNC EndleistenwinkelvonProfil:[ProfilDic objectForKey:@"profil2array"]];
       float winkelB = [CNC EndleistenwinkelvonProfil:Profil2Array];
-      NSLog(@"Endleistenwinkel B: %2.2f",winkelB*180/M_PI);
+      //NSLog(@"Endleistenwinkel B: %2.2f",winkelB*180/M_PI);
 
      // if ([OberseiteCheckbox state]&& (![OberseiteCheckbox state]))
       if (mitOberseite && (!mitUnterseite)) 
@@ -6016,7 +6016,7 @@ return returnInt;
       // Koordinaten der Einlauflinie: nur x,y
       NSArray* EndleistenEinlaufArrayA=[CNC EndleisteneinlaufMitWinkel:winkelA mitLaenge:einlauflaenge mitTiefe:einlauftiefe];
       NSArray* EndleistenEinlaufArrayB=[CNC EndleisteneinlaufMitWinkel:winkelB mitLaenge:einlauflaenge mitTiefe:einlauftiefe];
-      NSLog(@"AVR EndleistenEinlaufArrayA: %@",[EndleistenEinlaufArrayA description]);
+      //NSLog(@"AVR EndleistenEinlaufArrayA: %@",[EndleistenEinlaufArrayA description]);
       int k=0;
       for(k=1;k<[EndleistenEinlaufArrayA count];k++)
       {
@@ -6321,7 +6321,7 @@ return returnInt;
    
    if ((mitUnterseite ^ mitOberseite) ) // nur eine Seite
        {
-          NSLog(@"nur eine Seite");
+          //NSLog(@"nur eine Seite");
           
           // Beginn und Ende des Abbrandes einstellen
           
@@ -6907,7 +6907,7 @@ return returnInt;
    
    int index=0;
    
-   NSLog(@"Einstich");
+   //NSLog(@"Einstich");
    
    NSPoint PositionA = StartpunktA;
    NSPoint PositionB = StartpunktB;
@@ -7006,7 +7006,7 @@ return returnInt;
 
 - (IBAction)reportBlockkonfigurieren:(id)sender
 {
-   NSLog(@"reportBlockkonfigurieren Seite: %d",[RechtsLinksRadio selectedSegment]);
+   //NSLog(@"reportBlockkonfigurieren Seite: %d",[RechtsLinksRadio selectedSegment]);
    
    // Einlauf und Auslauf in gleicher funktion. Unterschieden durch Parameter 'Lage'.
    // Lage: 0: Einlauf 1: Auslauf
@@ -7194,7 +7194,7 @@ return returnInt;
       
       int index=0;
      
-      NSLog(@"Einstich");
+      //NSLog(@"Einstich");
 
       [BlockKoordinatenTabelle addObject:[NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithFloat:PositionA.x],@"ax",[NSNumber numberWithFloat:PositionA.y],@"ay",[NSNumber numberWithFloat:PositionB.x],@"bx", [NSNumber numberWithFloat:PositionB.y],@"by",[NSNumber numberWithInt:index],@"index",[NSNumber numberWithInt:lage],@"lage",[NSNumber numberWithFloat:aktuellepwm*full_pwm],@"pwm",nil]];
       
@@ -7216,7 +7216,7 @@ return returnInt;
  */
      
 
-      NSLog(@"Einstich zum Blockrand"); // A
+      //NSLog(@"Einstich zum Blockrand"); // A
       
       // Einstich  zum Blockrand
       PositionA.x +=einstichx;       
@@ -7235,7 +7235,7 @@ return returnInt;
       float deltaAY = einlaufAY - EckeLinksUnten.y;
       float deltaBY = einlaufBY - EckeLinksUnten.y;
       
-      NSLog(@"Anfahrt von unten"); // B
+      //NSLog(@"Anfahrt von unten"); // B
       
       PositionA.y +=deltaAY;
       PositionB.y +=deltaBY;
@@ -7317,7 +7317,7 @@ return returnInt;
        */
       //Schneiden zu Blockunterkante rechts
       
-      NSLog(@"Schneiden zu Blockunterkante rechts");
+      //NSLog(@"Schneiden zu Blockunterkante rechts");
       PositionA.y = EckeRechtsUnten.y;// - einstichy + 3;
       PositionB.y = EckeRechtsUnten.y;// - einstichy + 3;
       

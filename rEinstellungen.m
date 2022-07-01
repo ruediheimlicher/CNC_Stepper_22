@@ -3310,7 +3310,7 @@
 #pragma mark Block
 - (IBAction)reportBlockEinfuegen:(id)sender
 {
-   NSLog(@"reportBlockEinfuegen");
+   //NSLog(@"reportBlockEinfuegen");
    NSMutableDictionary* BlockDic=[[NSMutableDictionary alloc]initWithCapacity:0];
    [BlockDic setObject:[NSNumber numberWithInt:[Blockoberkante intValue]] forKey:@"blockoberkante"];
    [BlockDic setObject:[NSNumber numberWithInt:[Auslaufkote intValue]] forKey:@"auslaufkote"];
@@ -3331,7 +3331,7 @@
 - (NSArray*)readFigur
 {
    NSArray* FigurArray = [Utils readFigur];
-   NSLog(@"CNC_Eingbe readFigur FigurArray: \n%@",[FigurArray description]);
+   //NSLog(@"CNC_Eingbe readFigur FigurArray: \n%@",[FigurArray description]);
 
    return FigurArray;
 }

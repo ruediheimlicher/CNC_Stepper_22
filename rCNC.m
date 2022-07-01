@@ -2326,7 +2326,7 @@ PortA=vs[n & 3]; warte10ms(); n++;
    Endpunkt.y +=laenge * sinf(winkel);
    NSArray* tempEinlaufArray4 = [NSArray arrayWithObjects:[NSNumber numberWithFloat:Endpunkt.x],[NSNumber numberWithFloat:Endpunkt.y],[NSNumber numberWithFloat:full_pwm], nil];
    [EinlaufpunkteArray addObject:tempEinlaufArray4];
-   NSLog(@"EndleisteneinlaufMitWinkel EinlaufpunkteArray: %@",EinlaufpunkteArray);
+   //NSLog(@"EndleisteneinlaufMitWinkel EinlaufpunkteArray: %@",EinlaufpunkteArray);
    return EinlaufpunkteArray;
 }
 
@@ -2364,7 +2364,7 @@ PortA=vs[n & 3]; warte10ms(); n++;
    Endpunkt.y +=tiefe;
    NSArray* tempEinlaufArray3 = [NSArray arrayWithObjects:[NSNumber numberWithFloat:Endpunkt.x],[NSNumber numberWithFloat:Endpunkt.y],[NSNumber numberWithFloat:red_pwm], nil];
    [AuslaufpunkteArray addObject:tempEinlaufArray3];
-   NSLog(@"NasenleisteeinlaufMitWinkel AuslaufpunkteArray: %@",AuslaufpunkteArray);
+   //NSLog(@"NasenleisteeinlaufMitWinkel AuslaufpunkteArray: %@",AuslaufpunkteArray);
    return AuslaufpunkteArray;
 }
 

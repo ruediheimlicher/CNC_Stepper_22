@@ -163,7 +163,7 @@ private void button4_Click(object sender, EventArgs e)
 
 - (void)USBAktion:(NSNotification*)note
 {
-   NSLog(@"USBAktion usbstatus: %d note: %@",usbstatus, note);
+   //NSLog(@"USBAktion usbstatus: %d note: %@",usbstatus, note);
    if ([[note userInfo]objectForKey:@"usb"])
    {
       
