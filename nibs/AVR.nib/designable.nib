@@ -257,7 +257,7 @@
                                             </connections>
                                         </button>
                                         <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1669">
-                                            <rect key="frame" x="18" y="554" width="60" height="60"/>
+                                            <rect key="frame" x="17" y="553" width="62" height="62"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="bevel" title="HOT" bezelStyle="regularSquare" image="punkt_weiss" imagePosition="overlaps" alignment="center" alternateImage="punkt_rot" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="1670">
                                                 <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
@@ -279,7 +279,7 @@
                                             </connections>
                                         </button>
                                         <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1571">
-                                            <rect key="frame" x="180" y="512.5" width="69" height="18"/>
+                                            <rect key="frame" x="180" y="513.5" width="69" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="check" title="Auslauf" bezelStyle="regularSquare" imagePosition="right" alignment="left" controlSize="small" state="on" inset="2" id="1572">
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -287,7 +287,7 @@
                                             </buttonCell>
                                         </button>
                                         <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1573">
-                                            <rect key="frame" x="257" y="512.5" width="66" height="18"/>
+                                            <rect key="frame" x="257" y="513.5" width="66" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="check" title="Einlauf" bezelStyle="regularSquare" imagePosition="right" alignment="left" controlSize="small" state="on" inset="2" id="1574">
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -346,7 +346,7 @@
                                             </connections>
                                         </button>
                                         <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1300">
-                                            <rect key="frame" x="580" y="386" width="56" height="56"/>
+                                            <rect key="frame" x="579" y="385" width="58" height="58"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="bevel" title="HALT" alternateTitle="Stop" bezelStyle="regularSquare" image="Halt" imagePosition="only" alignment="center" alternateImage="Halt_alt" enabled="NO" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="1301">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
@@ -609,7 +609,7 @@
                                             </textFieldCell>
                                         </textField>
                                         <stepper horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1587">
-                                            <rect key="frame" x="705" y="614" width="19" height="27"/>
+                                            <rect key="frame" x="705" y="613" width="19" height="29"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <stepperCell key="cell" continuous="YES" alignment="left" maxValue="200" id="1588"/>
                                             <connections>
@@ -655,7 +655,7 @@
                                             </view>
                                         </box>
                                         <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1656">
-                                            <rect key="frame" x="181" y="622" width="142" height="23"/>
+                                            <rect key="frame" x="180" y="621" width="144" height="25"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="bevel" title="&lt; Seite &gt;" alternateTitle="Stop" bezelStyle="regularSquare" alignment="center" controlSize="small" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="1657">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -666,7 +666,7 @@
                                             </connections>
                                         </button>
                                         <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2185">
-                                            <rect key="frame" x="326" y="620" width="81" height="25"/>
+                                            <rect key="frame" x="325" y="619" width="83" height="27"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="bevel" title="V Spiegeln" alternateTitle="Stop" bezelStyle="regularSquare" imagePosition="overlaps" alignment="center" controlSize="small" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="2186">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -717,7 +717,7 @@
                                             </connections>
                                         </slider>
                                         <stepper horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1689">
-                                            <rect key="frame" x="60" y="501" width="19" height="27"/>
+                                            <rect key="frame" x="60" y="500" width="19" height="29"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <stepperCell key="cell" continuous="YES" alignment="left" maxValue="100" id="1690"/>
                                             <connections>
@@ -972,7 +972,7 @@
                                                         </textFieldCell>
                                                     </textField>
                                                     <stepper horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1723">
-                                                        <rect key="frame" x="388" y="12" width="15" height="22"/>
+                                                        <rect key="frame" x="388" y="10" width="15" height="25"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                         <stepperCell key="cell" controlSize="small" continuous="YES" alignment="left" maxValue="255" id="1724">
                                                             <font key="font" metaFont="smallSystem"/>
@@ -991,7 +991,7 @@
                                                         </textFieldCell>
                                                     </textField>
                                                     <stepper horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1789">
-                                                        <rect key="frame" x="337" y="11" width="15" height="22"/>
+                                                        <rect key="frame" x="337" y="9" width="15" height="25"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                         <stepperCell key="cell" controlSize="small" continuous="YES" alignment="left" increment="0.20000000000000001" maxValue="1000" id="1792">
                                                             <font key="font" metaFont="smallSystem"/>
@@ -1001,7 +1001,7 @@
                                                         </connections>
                                                     </stepper>
                                                     <stepper horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1784">
-                                                        <rect key="frame" x="282" y="11" width="15" height="22"/>
+                                                        <rect key="frame" x="282" y="9" width="15" height="25"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                         <stepperCell key="cell" controlSize="small" continuous="YES" alignment="left" increment="0.20000000000000001" maxValue="1000" id="1787">
                                                             <font key="font" metaFont="smallSystem"/>
@@ -1020,7 +1020,7 @@
                                                         </textFieldCell>
                                                     </textField>
                                                     <stepper horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1327">
-                                                        <rect key="frame" x="224" y="11" width="15" height="22"/>
+                                                        <rect key="frame" x="224" y="9" width="15" height="25"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                         <stepperCell key="cell" controlSize="small" continuous="YES" alignment="left" increment="0.20000000000000001" maxValue="1000" id="1328">
                                                             <font key="font" metaFont="smallSystem"/>
@@ -1039,7 +1039,7 @@
                                                         </textFieldCell>
                                                     </textField>
                                                     <stepper horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2105">
-                                                        <rect key="frame" x="168" y="11" width="15" height="22"/>
+                                                        <rect key="frame" x="168" y="9" width="15" height="25"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                         <stepperCell key="cell" controlSize="small" continuous="YES" alignment="left" increment="0.20000000000000001" maxValue="1000" id="2106">
                                                             <font key="font" metaFont="smallSystem"/>
@@ -1058,7 +1058,7 @@
                                                         </textFieldCell>
                                                     </textField>
                                                     <stepper horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1305">
-                                                        <rect key="frame" x="115" y="11" width="15" height="22"/>
+                                                        <rect key="frame" x="115" y="9" width="15" height="25"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                         <stepperCell key="cell" controlSize="small" continuous="YES" alignment="left" maxValue="1000" id="1306">
                                                             <font key="font" metaFont="smallSystem"/>
@@ -1430,7 +1430,7 @@
                                             </connections>
                                         </button>
                                         <stepper horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2164">
-                                            <rect key="frame" x="480" y="619" width="19" height="27"/>
+                                            <rect key="frame" x="480" y="618" width="19" height="29"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <stepperCell key="cell" continuous="YES" alignment="left" maxValue="100" id="2165">
                                                 <connections>
@@ -1508,6 +1508,17 @@
                                             </buttonCell>
                                             <connections>
                                                 <action selector="reportNeuTaste:" target="-2" id="1286"/>
+                                            </connections>
+                                        </button>
+                                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jQ9-aU-n53">
+                                            <rect key="frame" x="556" y="454" width="52" height="25"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="squareTextured" title="Rumpf" bezelStyle="texturedSquare" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="YEp-a4-LAF">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="reportRumpf:" target="-2" id="xN9-kA-oox"/>
                                             </connections>
                                         </button>
                                     </subviews>

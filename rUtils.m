@@ -96,7 +96,7 @@ NSLog(@"logRect: origin.x %2.2f origin.y %2.2f size.heigt %2.2f size.width %2.2f
 				tempZeilenString=[tempZeilenString stringByReplacingOccurrencesOfString:@"  " withString:@" "];
 			}
 			LeerschlagRange=[tempZeilenString rangeOfString:@"  "];
-			NSLog(@"LeerschlagRange loop loc: %d l: %d",LeerschlagRange.location, LeerschlagRange.length);
+			NSLog(@"LeerschlagRange loop loc: %lul l: %lul",LeerschlagRange.location, LeerschlagRange.length);
 		}
 		//NSLog(@"tempZeilenString B: %@",tempZeilenString);
 		tempZeilenString=[tempZeilenString stringByReplacingOccurrencesOfString:@" " withString:@"\t"];
@@ -373,7 +373,7 @@ NSLog(@"logRect: origin.x %2.2f origin.y %2.2f size.heigt %2.2f size.width %2.2f
 	
 	NSRange nameRange;
 	nameRange=[firstString rangeOfString:@"\n"];
-	NSLog(@"nameRange start loc: %u l: %u",nameRange.location, nameRange.length);	
+   NSLog(@"nameRange start loc: %lu l: %u",(unsigned long)nameRange.location, nameRange.length);	
 	
 	if (nameRange.location < NSNotFound)
 	{

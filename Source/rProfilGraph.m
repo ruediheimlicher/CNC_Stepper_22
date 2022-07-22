@@ -241,7 +241,7 @@ int (^add)(int,int) = ^(int number1, int number2){
 
 	//NSLog(@"mouseDown: %@",[derEvent description]);
    //NSLog(@"mouseDown: modifierFlags: %d NSShiftKeyMask: %d",[derEvent modifierFlags],NSShiftKeyMask);
-   unsigned int shift =[derEvent modifierFlags] & NSShiftKeyMask;
+   unsigned int shift =[derEvent modifierFlags] & NSEventModifierFlagShift;
    if (shift)
    {
    NSLog(@"shift");

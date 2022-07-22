@@ -576,7 +576,7 @@ void DeviceRemoved(void *refCon, io_iterator_t iterator)
       NSString* s2=@"";
       NSString* InformationString=[NSString stringWithFormat:@"%@\n%@",s1,s2];
       [Warnung setInformativeText:InformationString];
-      [Warnung setAlertStyle:NSWarningAlertStyle];
+      [Warnung setAlertStyle:NSAlertStyleWarning];
       
       int antwort=[Warnung runModal];
       [AVR DC_ON:0];

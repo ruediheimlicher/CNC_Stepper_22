@@ -18,7 +18,7 @@
    self = [super initWithFrame:frame];
    if (self) 
    {
-      DatenDic=[[NSArray alloc ]init];
+      DatenDic=[[NSDictionary alloc ]init];
       oldMauspunkt = NSMakePoint(0,0);
       scale = 1;
       mausistdown=0;
@@ -1013,40 +1013,40 @@
    [Eingabeformatter setFormat:@"###.0;0.0;(##0.0)"];//#,###.00;0.00;($#,##0.00
    [Eingabeformatter setNumberStyle:NSNumberFormatterDecimalStyle];
 //   [StartpunktX setDelegate:self];
-   [StartpunktX setAlignment:NSRightTextAlignment];
+   [StartpunktX setAlignment:NSTextAlignmentRight];
    [StartpunktX setFormatter:Eingabeformatter];
    
    [StartpunktY setDelegate:self];
-   [StartpunktY setAlignment:NSRightTextAlignment];
+   [StartpunktY setAlignment:NSTextAlignmentRight];
    [StartpunktY setFormatter:Eingabeformatter];
    
    [EndpunktX setDelegate:self];
-   [EndpunktX setAlignment:NSRightTextAlignment];
+   [EndpunktX setAlignment:NSTextAlignmentRight];
    [EndpunktX setFormatter:Eingabeformatter];
    
    [EndpunktY setDelegate:self];
-   [EndpunktY setAlignment:NSRightTextAlignment];
+   [EndpunktY setAlignment:NSTextAlignmentRight];
    [EndpunktY setFormatter:Eingabeformatter];
    
    [deltaX setDelegate:self];
-   [deltaX setAlignment:NSRightTextAlignment];
+   [deltaX setAlignment:NSTextAlignmentRight];
    [deltaX setFormatter:Eingabeformatter];
    
    [deltaY setDelegate:self];
-   [deltaY setAlignment:NSRightTextAlignment];
+   [deltaY setAlignment:NSTextAlignmentRight];
    [deltaY setFormatter:Eingabeformatter];
    
    
    [Laenge  setDelegate:self];
-   [Laenge setAlignment:NSRightTextAlignment];
+   [Laenge setAlignment:NSTextAlignmentRight];
    [Laenge setFormatter:Eingabeformatter];
    
    [Winkel  setDelegate:self];
-   [Winkel setAlignment:NSRightTextAlignment];
+   [Winkel setAlignment:NSTextAlignmentRight];
    [Winkel setFormatter:Eingabeformatter];
    
    [AbbrandmassA  setDelegate:self];
-   [AbbrandmassA setAlignment:NSRightTextAlignment];
+   [AbbrandmassA setAlignment:NSTextAlignmentRight];
    [AbbrandmassA setFormatter:Eingabeformatter];
    
    
@@ -1056,19 +1056,19 @@
    
    
    [LibStartpunktX setDelegate:self];
-   [LibStartpunktX setAlignment:NSRightTextAlignment];
+   [LibStartpunktX setAlignment:NSTextAlignmentRight];
    [LibStartpunktX setFormatter:Eingabeformatter];
    
    [LibStartpunktY setDelegate:self];
-   [LibStartpunktY setAlignment:NSRightTextAlignment];
+   [LibStartpunktY setAlignment:NSTextAlignmentRight];
    [LibStartpunktY setFormatter:Eingabeformatter];
    
    [LibEndpunktX setDelegate:self];
-   [LibEndpunktX setAlignment:NSRightTextAlignment];
+   [LibEndpunktX setAlignment:NSTextAlignmentRight];
    [LibEndpunktX setFormatter:Eingabeformatter];
    
    [LibEndpunktY setDelegate:self];
-   [LibEndpunktY setAlignment:NSRightTextAlignment];
+   [LibEndpunktY setAlignment:NSTextAlignmentRight];
    [LibEndpunktY setFormatter:Eingabeformatter];
    //   ElementLibArray = (NSMutableArray*)[self readLib];
    //NSLog(@"Einstellungen awake ElementLibArray: %@",[ElementLibArray valueForKey:@"name"]);
@@ -1090,28 +1090,28 @@
    
    // Profil
    [Profil1Tiefe setDelegate:self];
-   [Profil1Tiefe setAlignment:NSRightTextAlignment];
+   [Profil1Tiefe setAlignment:NSTextAlignmentRight];
    [Profil1Tiefe setIntValue:120];
    //[ProfilStartpunktX setFormatter:Eingabeformatter];
    [Profil2Tiefe setDelegate:self];
-   [Profil2Tiefe setAlignment:NSRightTextAlignment];
+   [Profil2Tiefe setAlignment:NSTextAlignmentRight];
    [Profil2Tiefe setIntValue:90];
    //[ProfilStartpunktX setFormatter:Eingabeformatter];
    
    [ProfilStartpunktX setDelegate:self];
-   [ProfilStartpunktX setAlignment:NSRightTextAlignment];
+   [ProfilStartpunktX setAlignment:NSTextAlignmentRight];
    [ProfilStartpunktX setFormatter:Eingabeformatter];
    
    [ProfilStartpunktY setDelegate:self];
-   [ProfilStartpunktY setAlignment:NSRightTextAlignment];
+   [ProfilStartpunktY setAlignment:NSTextAlignmentRight];
    [ProfilStartpunktY setFormatter:Eingabeformatter];
    
    [ProfilEndpunktX setDelegate:self];
-   [ProfilEndpunktX setAlignment:NSRightTextAlignment];
+   [ProfilEndpunktX setAlignment:NSTextAlignmentRight];
    [ProfilEndpunktX setFormatter:Eingabeformatter];
    
    [ProfilEndpunktY setDelegate:self];
-   [ProfilEndpunktY setAlignment:NSRightTextAlignment];
+   [ProfilEndpunktY setAlignment:NSTextAlignmentRight];
    [ProfilEndpunktY setFormatter:Eingabeformatter];
    Profil1Name = [NSString string];
    Profil2Name = [NSString string];
@@ -1286,7 +1286,7 @@
 
 - (void)setDaten:(NSDictionary*)daten
 {
-   //NSLog(@"setDaten daten: %@",[daten description]);
+   NSLog(@"setDaten daten: %@",[daten description]);
    
    if ([daten objectForKey:@"element"])
    {
@@ -2205,10 +2205,11 @@
 
    [ErgebnisDic setObject:[NSNumber numberWithFloat:winkel]  forKey:@"winkel"];
    [ErgebnisDic setObject:@"Schliessen"  forKey:@"quelle"];
-   //[nc postNotificationName:@"Elementeingabe" object:self userInfo:ErgebnisDic];
+   [nc postNotificationName:@"Elementeingabe" object:self userInfo:ErgebnisDic];
    
-   [NSApp stopModalWithCode:1];
    [[self window]orderOut:NULL];
+   [NSApp stopModalWithCode:1];
+  
 }
 
 
@@ -2279,7 +2280,7 @@
 
 - (void)doProfilEinfuegenTask
 {
-   //NSLog(@"reportProfilEinfuegen");
+   NSLog(@"doProfilEinfuegenTask");
    if ([Profil1Array count])
    {
       NSMutableDictionary* ProfilDic=[[NSMutableDictionary alloc]initWithCapacity:0];
@@ -2400,7 +2401,7 @@
                }
             }
             
-            //NSLog(@"readLib: tempElementArray: %@",[[LibElementArray valueForKey:@"name"]description]);
+            NSLog(@"readLib: tempElementArray: %@",[[LibElementArray valueForKey:@"name"]description]);
             
 			}
 			
@@ -2513,7 +2514,7 @@
    NSString* s2=@"";
    NSString* InformationString=[NSString stringWithFormat:@"%@\n%@",s1,s2];
    [Warnung setInformativeText:InformationString];
-   [Warnung setAlertStyle:NSWarningAlertStyle];
+   [Warnung setAlertStyle:NSAlertStyleWarning];
    
    int antwort=[Warnung runModal];
    switch (antwort)

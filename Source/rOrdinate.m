@@ -34,7 +34,7 @@
 	NSMutableDictionary* AchseTextDic=[[NSMutableDictionary alloc]initWithCapacity:0];
 	[AchseTextDic setObject:AchseTextFont forKey:NSFontAttributeName];
 	NSMutableParagraphStyle* AchseStil=[[NSMutableParagraphStyle alloc]init];
-	[AchseStil setAlignment:NSRightTextAlignment];
+	[AchseStil setAlignment:NSTextAlignmentRight];
 	[AchseTextDic setObject:AchseStil forKey:NSParagraphStyleAttributeName];
 	//NSLog(@"AchseTextDic: %@",[AchseTextDic description]);
 	NSRect AchsenRahmen=[self bounds];//NSMakeRect(NetzEcke.x,NetzEcke.y,200,100);

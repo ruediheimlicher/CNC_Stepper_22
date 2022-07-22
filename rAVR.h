@@ -36,6 +36,26 @@
 @end
 */
 
+
+struct rumpfDatenStruct
+{
+   float breite;
+   float tiefe;
+   float blockbreite;
+   float blockhoehe;
+   float abstandoben;
+   float abstandunten;
+   float offsetA;
+   float offsetB;
+   float einlaufA; // Blockrand bis Einstich
+   float einlaufB;
+ 
+   float auslaufA; // Blockrand bis Einstich
+   float auslaufB;
+
+};
+
+
 @interface rProfildruckView : rProfilGraph
 {
    NSView*        Druckfeld;
@@ -313,8 +333,11 @@
    IBOutlet id             Schalendickefeld;
    
    rProfildruckView*       Profilfeld;
+   
+   struct rumpfDatenStruct rumpfDaten; 
    }
 @property (nonatomic)  int    Kote;
+
 - (NSMutableDictionary*)readCNC_PList;
 - (NSArray*)readProfilLib;
 - (IBAction)reportUSB:(id)sender;
@@ -357,7 +380,7 @@
 - (IBAction)reportWertBYStepper:(id)sender;
 
 //- (IBAction)reportPWMStepper:(id)sender;
-- (IBAction)reportNewElement:(id)sender;
+//- (IBAction)reportNewElement:(id)sender;
 - (IBAction)reportManLeft:(id)sender;
 - (IBAction)reportManRight:(id)sender;
 - (IBAction)reportManUp:(id)sender;
@@ -405,7 +428,7 @@
 // TWI
 //- (void)writeAVR:(int)i2cAdresse mitDaten:(NSArray*)dieDaten;
 //- (IBAction)reportUSB_sendArray:(id)sender;
-- (IBAction)reportPrepareTaste:(id)sender;
+//- (IBAction)reportPrepareTaste:(id)sender;
 - (IBAction)reportNeuTaste:(id)sender;
 //- (IBAction)terminateTransfer:(id)sender;
 

@@ -289,7 +289,7 @@ private void button4_Click(object sender, EventArgs e)
       NSString* s2=@"";
       NSString* InformationString=[NSString stringWithFormat:@"%@\n%@",s1,s2];
       [Warnung setInformativeText:InformationString];
-      [Warnung setAlertStyle:NSWarningAlertStyle];
+      [Warnung setAlertStyle:NSAlertStyleWarning];
       
       antwort=[Warnung runModal];
       [AVR DC_ON:0];
@@ -411,8 +411,8 @@ private void button4_Click(object sender, EventArgs e)
 
 - (void)writeCNCAbschnitt
 {
-	NSLog(@"writeCNCAbschnitt Start Stepperposition: %d count: %d",Stepperposition,[SchnittDatenArray count]);
-	//NSLog(@"writeCNCAbschnitt SchnittDatenArray anz: %d\n SchnittDatenArray: %@",[SchnittDatenArray count],[SchnittDatenArray description]);
+	NSLog(@"writeCNCAbschnitt Start Stepperposition: %d count: %lul",Stepperposition,[SchnittDatenArray count]);
+	NSLog(@"writeCNCAbschnitt SchnittDatenArray anz: %lul\n SchnittDatenArray: %@",[SchnittDatenArray count],[SchnittDatenArray description]);
    
    /*
    double dauer0 = 0;
@@ -468,7 +468,7 @@ private void button4_Click(object sender, EventArgs e)
          //[tempSchnittdatenArray addObject:[NSNumber numberWithInt:[AVR pwm]]];
          NSScanner *theScanner;
          unsigned	  value;
-         NSLog(@"writeCNCAbschnitt tempSchnittdatenArray count: %d",[tempSchnittdatenArray count]);
+         NSLog(@"writeCNCAbschnitt tempSchnittdatenArray count: %lul",(unsigned long)[tempSchnittdatenArray count]);
          //NSLog(@"tempSchnittdatenArray object 20: %d",[[tempSchnittdatenArray objectAtIndex:20]intValue]);
          //NSLog(@"loop start");
          //NSDate *anfang = [NSDate date];
@@ -494,7 +494,7 @@ private void button4_Click(object sender, EventArgs e)
                [alert setInformativeText:@"Please only use hex values between 00 and FF."];
                [alert addButtonWithTitle:@"OK"];
               // [alert addButtonWithTitle:@"Cancel"];
-               [alert setAlertStyle:NSWarningAlertStyle];
+               [alert setAlertStyle:NSAlertStyleWarning];
                
                
                
@@ -525,11 +525,11 @@ private void button4_Click(object sender, EventArgs e)
          fprintf(stderr,"writeCNCAbschnitt\n");
          for (uint8_t i=0;i<20;i++)
          {
-  //          fprintf(stderr,"%d\t",sendbuffer[i]);
+            fprintf(stderr,"%d\t",sendbuffer[i]);
          }
          fprintf(stderr,"\n*");
 
-        // NSLog(@"writeCNCAbschnitt ********   code: %d  position: %d\nsendbuffer: %s",sendbuffer[16],sendbuffer[17],sendbuffer);
+         NSLog(@"writeCNCAbschnitt ********   code: %d  position: %d\nsendbuffer: %s",sendbuffer[16],sendbuffer[17],sendbuffer);
 
          
          int senderfolg= rawhid_send(0, sendbuffer, 32, 50);

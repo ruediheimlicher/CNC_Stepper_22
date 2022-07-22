@@ -76,7 +76,7 @@
    NSLog(@"ElementHolen");
    BOOL istOrdner;
    NSFileManager *Filemanager = [NSFileManager defaultManager];
-   NSString* LibPfad=[NSHomeDirectory() stringByAppendingFormat:@"%@%@",@"/Documents",@"/CNCDaten",@"/ElementLib"];
+   NSString* LibPfad=[NSHomeDirectory() stringByAppendingFormat:@"%@%@%@",@"/Documents",@"/CNCDaten",@"/ElementLib"];
    erfolg= ([Filemanager fileExistsAtPath:LibPfad isDirectory:&istOrdner]&&istOrdner);
    NSLog(@"Elementholen:   LibPfad: %@",LibPfad);	
    if (erfolg)
