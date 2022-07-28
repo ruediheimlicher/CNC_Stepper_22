@@ -5082,7 +5082,7 @@ return returnInt;
                      mitRadiusA:10
                      mitBreiteB:15 
                      mitHoeheB:15 
-                     mitRadiusB:10
+                     mitRadiusB:5
     ];
    [CNC_Stoptaste setEnabled:YES];
 }
@@ -5094,8 +5094,8 @@ return returnInt;
 
 - (NSArray*)RumpfelementmitBreiteA: (float)breiteA mitHoeheA: (float)hoeheA mitRadiusA:(float) radiusA mitBreiteB: (float)breiteB mitHoeheB: (float)hoeheB mitRadiusB:(float) radiusB
 {
-    float origpwm=[DC_PWM intValue];
-   
+    float origpwm=[DC_PWM floatValue];
+   float redpwm = origpwm * [red_pwmFeld floatValue];
    int abstandoben = 5;
    float abstandunten = 10;
    float testbreitea=0;
@@ -5138,7 +5138,7 @@ return returnInt;
    // EinlaufB symmetrisch
    float einlaufB = einlaufA + (breiteA - breiteB )/2 + offsetX;
  
-   float auslaufA = 25; // Einstich rechts bis Blockrand
+   float auslaufA = 15; // Einstich rechts bis Blockrand
    //auslaufA = Blockbreite - einlaufA - 2*rand - breiteB;
    float auslaufB = auslaufA + (breiteA - breiteB)/2 - offsetX;
    
@@ -5157,7 +5157,8 @@ return returnInt;
       [tempRahmenDic setObject:[NSNumber numberWithFloat:tempPunktB.y] forKey:@"by"];
       [tempRahmenDic setObject:[NSNumber numberWithInt:rahmenindex] forKey:@"index"];
       [tempRahmenDic setObject:[NSNumber numberWithInt:20] forKey:@"teil"]; // Kennzeichnung Oberseite
-      //NSLog(@"rahmenindex: %d tempRahmenDic: %@",rahmenindex,[tempRahmenDic description]);
+      [tempRahmenDic setObject:[NSNumber numberWithInt:origpwm]forKey:@"pwm"];
+   //NSLog(@"rahmenindex: %d tempRahmenDic: %@",rahmenindex,[tempRahmenDic description]);
       
       [KoordinatenTabelle addObject:[tempRahmenDic copy]];
       //NSLog(@"count: %d KoordinatenTabelle 0: %@",[KoordinatenTabelle count],[KoordinatenTabelle description]);
@@ -5173,6 +5174,7 @@ return returnInt;
    [tempRahmenDic setObject:[NSNumber numberWithFloat:tempPunktB.y] forKey:@"by"];
    [tempRahmenDic setObject:[NSNumber numberWithInt:rahmenindex] forKey:@"index"];
    [tempRahmenDic setObject:[NSNumber numberWithInt:20] forKey:@"teil"]; // Kennzeichnung Oberseite
+  
    //NSLog(@"rahmenindex: %d tempRahmenDic: %@",rahmenindex,[tempRahmenDic description]);
    [KoordinatenTabelle addObject:[tempRahmenDic copy]];
    //NSLog(@"count: %d KoordinatenTabelle 1: %@",[KoordinatenTabelle count],[KoordinatenTabelle description]);
@@ -5240,7 +5242,9 @@ return returnInt;
    [tempRahmenDic setObject:[NSNumber numberWithFloat:tempPunktB.y] forKey:@"by"];
    [tempRahmenDic setObject:[NSNumber numberWithInt:rahmenindex] forKey:@"index"];
    [tempRahmenDic setObject:[NSNumber numberWithInt:20] forKey:@"teil"]; // Kennzeichnung Oberseite
-   //NSLog(@"rahmenindex: %d tempRahmenDic: %@",rahmenindex,[tempRahmenDic description]);
+  
+   [tempRahmenDic setObject:[NSNumber numberWithInt:redpwm]forKey:@"pwm"];
+//NSLog(@"rahmenindex: %d tempRahmenDic: %@",rahmenindex,[tempRahmenDic description]);
    [KoordinatenTabelle addObject:[tempRahmenDic copy]];
    //NSLog(@"count: %d KoordinatenTabelle 1: %@",[KoordinatenTabelle count],[KoordinatenTabelle description]);
 
@@ -5257,6 +5261,8 @@ return returnInt;
    [tempRahmenDic setObject:[NSNumber numberWithFloat:tempPunktB.y] forKey:@"by"];
    [tempRahmenDic setObject:[NSNumber numberWithInt:rahmenindex] forKey:@"index"];
    [tempRahmenDic setObject:[NSNumber numberWithInt:20] forKey:@"teil"]; // Kennzeichnung Oberseite
+   [tempRahmenDic setObject:[NSNumber numberWithInt:origpwm]forKey:@"pwm"];
+
    //NSLog(@"rahmenindex: %d tempRahmenDic: %@",rahmenindex,[tempRahmenDic description]);
    [KoordinatenTabelle addObject:[tempRahmenDic copy]];
    //NSLog(@"count: %d KoordinatenTabelle 1: %@",[KoordinatenTabelle count],[KoordinatenTabelle description]);
@@ -5409,6 +5415,8 @@ return returnInt;
    [tempRahmenDic setObject:[NSNumber numberWithFloat:tempPunktB.y] forKey:@"by"];
    [tempRahmenDic setObject:[NSNumber numberWithInt:rahmenindex] forKey:@"index"];
    [tempRahmenDic setObject:[NSNumber numberWithInt:20] forKey:@"teil"]; // Kennzeichnung Oberseite
+   [tempRahmenDic setObject:[NSNumber numberWithInt:redpwm]forKey:@"pwm"];
+
    //NSLog(@"rahmenindex: %d tempRahmenDic: %@",rahmenindex,[tempRahmenDic description]);
    [KoordinatenTabelle addObject:[tempRahmenDic copy]];
    //NSLog(@"count: %d KoordinatenTabelle 1: %@",[KoordinatenTabelle count],[KoordinatenTabelle description]);
@@ -5424,6 +5432,8 @@ return returnInt;
    [tempRahmenDic setObject:[NSNumber numberWithFloat:tempPunktB.y] forKey:@"by"];
    [tempRahmenDic setObject:[NSNumber numberWithInt:rahmenindex] forKey:@"index"];
    [tempRahmenDic setObject:[NSNumber numberWithInt:20] forKey:@"teil"]; // Kennzeichnung Oberseite
+   [tempRahmenDic setObject:[NSNumber numberWithInt:origpwm]forKey:@"pwm"];
+
    //NSLog(@"rahmenindex: %d tempRahmenDic: %@",rahmenindex,[tempRahmenDic description]);
    [KoordinatenTabelle addObject:[tempRahmenDic copy]];
    //NSLog(@"count: %d KoordinatenTabelle 1: %@",[KoordinatenTabelle count],[KoordinatenTabelle description]);
