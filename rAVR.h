@@ -289,6 +289,24 @@ struct rumpfDatenStruct
    IBOutlet id					Portalabstand; 
    IBOutlet id					Spannweite; // 
    
+   
+   // Rumpf
+   IBOutlet id               RandFeld;
+   IBOutlet id               EinlaufFeld;
+   IBOutlet id               BreiteAFeld;
+   IBOutlet id               HoeheAFeld;
+   IBOutlet id               RadiusAFeld;
+   IBOutlet id               AuslaufFeld;
+   IBOutlet id               BreiteBFeld;
+   IBOutlet id               HoeheBFeld;
+   IBOutlet id               RadiusBFeld;
+   IBOutlet id               EinstichtiefeFeld;
+   //IBOutlet id               RumpfblockhoeheFeld;
+   IBOutlet id               RumpfabstandFeld; // Abstand CNC zu Block
+   IBOutlet id               ElementlaengeFeld; // Laenge des Rumpfabschnittes
+   
+   
+   
    IBOutlet id					USBKontrolle;
    
    IBOutlet id					HomeTaste;

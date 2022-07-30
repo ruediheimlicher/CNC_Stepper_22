@@ -412,7 +412,7 @@ private void button4_Click(object sender, EventArgs e)
 - (void)writeCNCAbschnitt
 {
 	NSLog(@"writeCNCAbschnitt Start Stepperposition: %d count: %lul",Stepperposition,[SchnittDatenArray count]);
-	NSLog(@"writeCNCAbschnitt SchnittDatenArray anz: %lul\n SchnittDatenArray: %@",[SchnittDatenArray count],[SchnittDatenArray description]);
+	//NSLog(@"writeCNCAbschnitt SchnittDatenArray anz: %lul\n SchnittDatenArray: %@",[SchnittDatenArray count],[SchnittDatenArray description]);
    
    /*
    double dauer0 = 0;
@@ -786,23 +786,20 @@ private void button4_Click(object sender, EventArgs e)
          {
             case 0xE1: // Antwort auf Mouseup 0xE0 HALT
             {
-               NSLog(@"readUSB  mouseup ");
+               NSLog(@"0xE1 readUSB  mouseup ");
                [SchnittDatenArray removeAllObjects];
                
                [AVR setBusy:0];
                
-               //[self DC_Aktion:NULL]; // auskopmmentoiert: DC nicht abstellen bei Pfeilaktionen
+               //[self DC_Aktion:NULL]; // auskommentiert: DC nicht abstellen bei Pfeilaktionen
                if (readTimer)
                {
                   if ([readTimer isValid])
                   {
                      //NSLog(@"readUSB  mouseup timer inval");
-                     
-                     
                      [readTimer invalidate];
                   }
                   readTimer = NULL;
-                  
                }
                Stepperposition=0;
                
@@ -1103,7 +1100,7 @@ private void button4_Click(object sender, EventArgs e)
       if (mausistdown == 0) // mouseup
       {
          pfeilaktion=1; // in writeCNCAbschnitt wird Datenserie beendet
-         NSLog(@" ********************* AVRController PfeilAktion mouseup pwm: %d",pwm);
+         NSLog(@" ********************* AVRController PfeilAktion mouseup=0 pwm: %d",pwm);
          char*      sendbuffer;
          sendbuffer=malloc(32);
          sendbuffer[16]=0xE0;
