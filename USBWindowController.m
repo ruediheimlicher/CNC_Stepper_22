@@ -389,14 +389,7 @@ void DeviceRemoved(void *refCon, io_iterator_t iterator)
 	
 	NSNotificationCenter * nc;
 	nc=[NSNotificationCenter defaultCenter];
-// CNC
-    /*
-	[nc addObserver:self
-			 selector:@selector(CNCAktion:)
-				  name:@"CNCaktion"
-				object:nil];
-	*/
-	[nc addObserver:self
+ 	[nc addObserver:self
            selector:@selector(USB_SchnittdatenAktion:)
                name:@"usbschnittdaten"
              object:nil];
@@ -530,6 +523,14 @@ void DeviceRemoved(void *refCon, io_iterator_t iterator)
           selector:@selector(StepperstromAktion:)
               name:@"stepperstrom"
             object:nil];
+   
+   // CNC
+   [nc addObserver:self
+          selector:@selector(savePListAktion:)
+              name:@"saveplist"
+            object:nil];
+
+   
    
 
 	lastDataRead=[[NSData alloc]init];
@@ -813,9 +814,6 @@ void DeviceRemoved(void *refCon, io_iterator_t iterator)
    if (PListPfad)
 	{
 		//NSLog(@"savePListAktion: PListPfad: %@ ",PListPfad);
-		
-      
-      
      
 		NSMutableDictionary* tempPListDic;//=[[NSMutableDictionary alloc]initWithCapacity:0];
 		NSFileManager *Filemanager=[NSFileManager defaultManager];
@@ -835,7 +833,7 @@ void DeviceRemoved(void *refCon, io_iterator_t iterator)
 
 		if ([[AVR KoordinatenTabelle]count])
 		{
-	//		[tempPListDic setObject:[AVR KoordinatenTabelle] forKey:@"koordinatentabelle"];
+			[tempPListDic setObject:[AVR KoordinatenTabelle] forKey:@"koordinatentabelle"];
 		}
       //int cncspeed = [AVR speed];
       [tempPListDic setObject:[NSNumber numberWithInt:[AVR speed]] forKey:@"speed"];
@@ -843,6 +841,9 @@ void DeviceRemoved(void *refCon, io_iterator_t iterator)
       [tempPListDic setObject:[NSNumber numberWithInt:[AVR pwm2save]] forKey:@"pwm"];
 		//NSLog(@"savePListAktion: gesicherter PListDic: %@",[tempPListDic description]);
 		
+      
+      
+      
       //float mindist = [AVR mindist2save];
       [tempPListDic setObject:[NSNumber numberWithFloat:[AVR mindist2save]] forKey:@"minimaldistanz"];
 
