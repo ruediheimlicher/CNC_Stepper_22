@@ -318,6 +318,7 @@ struct rumpfDatenStruct
    IBOutlet	id					AbmessungY;
    
    IBOutlet	id					red_pwmFeld;
+   IBOutlet   id               startdelayFeld;
    
    IBOutlet id					RechtsLinksRadio;
 
@@ -350,8 +351,10 @@ struct rumpfDatenStruct
    
    IBOutlet id             Schalendickefeld;
    
-   rProfildruckView*       Profilfeld;
+   IBOutlet id             NutCheckbox;
    
+   rProfildruckView*       Profilfeld;
+   NSMutableArray*         debugArray;
    struct rumpfDatenStruct rumpfDaten; 
    }
 @property (nonatomic)  int    Kote;

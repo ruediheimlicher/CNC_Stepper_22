@@ -841,6 +841,9 @@ void DeviceRemoved(void *refCon, io_iterator_t iterator)
       [tempPListDic setObject:[NSNumber numberWithInt:[AVR pwm2save]] forKey:@"pwm"];
 		//NSLog(@"savePListAktion: gesicherter PListDic: %@",[tempPListDic description]);
 		
+//      [tempPListDic setObject:[NSNumber numberWithInt:[AVR [startdelayFeld intValue]]] forKey:@"startdelay"];
+      //NSLog(@"savePListAktion: gesicherter PListDic: %@",[tempPListDic description]);
+
       
       
       

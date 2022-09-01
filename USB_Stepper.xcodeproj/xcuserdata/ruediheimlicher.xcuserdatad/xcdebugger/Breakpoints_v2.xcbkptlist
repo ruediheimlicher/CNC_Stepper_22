@@ -86,8 +86,8 @@
             timestampString = "614113233.134324"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "10112"
-            endingLineNumber = "10112"
+            startingLineNumber = "10609"
+            endingLineNumber = "10609"
             landmarkName = "-reportUSB_sendArray:"
             landmarkType = "7">
          </BreakpointContent>
@@ -120,8 +120,8 @@
             timestampString = "614113233.1347719"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "3668"
-            endingLineNumber = "3668"
+            startingLineNumber = "3682"
+            endingLineNumber = "3682"
             landmarkName = "-reportManRight:"
             landmarkType = "7">
          </BreakpointContent>
@@ -256,8 +256,8 @@
             timestampString = "614113233.135101"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "4082"
-            endingLineNumber = "4082"
+            startingLineNumber = "4096"
+            endingLineNumber = "4096"
             landmarkName = "-reportKreis:"
             landmarkType = "7">
          </BreakpointContent>
@@ -375,8 +375,8 @@
             timestampString = "614113233.136209"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "4703"
-            endingLineNumber = "4703"
+            startingLineNumber = "4717"
+            endingLineNumber = "4717"
             landmarkName = "rAVR"
             landmarkType = "3">
          </BreakpointContent>
@@ -392,8 +392,8 @@
             timestampString = "614113233.1362669"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "4717"
-            endingLineNumber = "4717"
+            startingLineNumber = "4731"
+            endingLineNumber = "4731"
             landmarkName = "rAVR"
             landmarkType = "3">
          </BreakpointContent>
@@ -409,8 +409,8 @@
             timestampString = "614113233.13635"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "3457"
-            endingLineNumber = "3457"
+            startingLineNumber = "3471"
+            endingLineNumber = "3471"
             landmarkName = "-ManRichtung:"
             landmarkType = "7">
          </BreakpointContent>
@@ -510,8 +510,8 @@
             filePath = "rAVR.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "4427"
-            endingLineNumber = "4427"
+            startingLineNumber = "4441"
+            endingLineNumber = "4441"
             landmarkName = "-MausGraphAktion:"
             landmarkType = "7">
          </BreakpointContent>
@@ -702,8 +702,8 @@
             filePath = "rAVR.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "9480"
-            endingLineNumber = "9480"
+            startingLineNumber = "9976"
+            endingLineNumber = "9976"
             landmarkName = "-reportHome:"
             landmarkType = "7">
          </BreakpointContent>
@@ -718,8 +718,8 @@
             filePath = "rAVR.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "9493"
-            endingLineNumber = "9493"
+            startingLineNumber = "9989"
+            endingLineNumber = "9989"
             landmarkName = "-reportHome:"
             landmarkType = "7">
          </BreakpointContent>
@@ -734,8 +734,8 @@
             filePath = "rAVR.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "9517"
-            endingLineNumber = "9517"
+            startingLineNumber = "10013"
+            endingLineNumber = "10013"
             landmarkName = "-reportHome:"
             landmarkType = "7">
          </BreakpointContent>
@@ -782,8 +782,8 @@
             filePath = "rAVR.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "3395"
-            endingLineNumber = "3395"
+            startingLineNumber = "3409"
+            endingLineNumber = "3409"
             landmarkName = "-ManRichtung:"
             landmarkType = "7">
          </BreakpointContent>
@@ -942,8 +942,8 @@
             filePath = "rAVR.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "5079"
-            endingLineNumber = "5079"
+            startingLineNumber = "5093"
+            endingLineNumber = "5093"
             landmarkName = "-reportProfil:"
             landmarkType = "7">
          </BreakpointContent>
@@ -1006,8 +1006,8 @@
             filePath = "rAVR.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "3531"
-            endingLineNumber = "3531"
+            startingLineNumber = "3545"
+            endingLineNumber = "3545"
             landmarkName = "-ManRichtung:"
             landmarkType = "7">
          </BreakpointContent>
@@ -1102,8 +1102,8 @@
             filePath = "rAVR.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "7280"
-            endingLineNumber = "7280"
+            startingLineNumber = "7776"
+            endingLineNumber = "7776"
             landmarkName = "-LibProfileingabeAktion:"
             landmarkType = "7">
          </BreakpointContent>
@@ -1118,8 +1118,8 @@
             filePath = "rAVR.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "7338"
-            endingLineNumber = "7338"
+            startingLineNumber = "7834"
+            endingLineNumber = "7834"
             landmarkName = "-LibProfileingabeAktion:"
             landmarkType = "7">
          </BreakpointContent>
@@ -1134,8 +1134,8 @@
             filePath = "rAVR.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "7322"
-            endingLineNumber = "7322"
+            startingLineNumber = "7818"
+            endingLineNumber = "7818"
             landmarkName = "-LibProfileingabeAktion:"
             landmarkType = "7">
          </BreakpointContent>
@@ -1150,8 +1150,8 @@
             filePath = "rAVR.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "7318"
-            endingLineNumber = "7318"
+            startingLineNumber = "7814"
+            endingLineNumber = "7814"
             landmarkName = "-LibProfileingabeAktion:"
             landmarkType = "7">
          </BreakpointContent>
@@ -1166,8 +1166,8 @@
             filePath = "rAVR.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "7710"
-            endingLineNumber = "7710"
+            startingLineNumber = "8206"
+            endingLineNumber = "8206"
             landmarkName = "-RahmenDic"
             landmarkType = "7">
          </BreakpointContent>
@@ -1182,8 +1182,8 @@
             filePath = "rAVR.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "7724"
-            endingLineNumber = "7724"
+            startingLineNumber = "8220"
+            endingLineNumber = "8220"
             landmarkName = "-RahmenDic"
             landmarkType = "7">
          </BreakpointContent>
@@ -1198,8 +1198,8 @@
             filePath = "rAVR.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "7061"
-            endingLineNumber = "7061"
+            startingLineNumber = "7557"
+            endingLineNumber = "7557"
             landmarkName = "-LibProfileingabeAktion:"
             landmarkType = "7">
          </BreakpointContent>
@@ -1246,8 +1246,8 @@
             filePath = "rAVR.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "7025"
-            endingLineNumber = "7025"
+            startingLineNumber = "7521"
+            endingLineNumber = "7521"
             landmarkName = "-LibProfileingabeAktion:"
             landmarkType = "7">
          </BreakpointContent>
@@ -1278,8 +1278,8 @@
             filePath = "rAVR.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "2677"
-            endingLineNumber = "2677"
+            startingLineNumber = "2691"
+            endingLineNumber = "2691"
             landmarkName = "-reportStopKnopf:"
             landmarkType = "7">
          </BreakpointContent>
@@ -1294,8 +1294,8 @@
             filePath = "rAVR.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1700"
-            endingLineNumber = "1700"
+            startingLineNumber = "1714"
+            endingLineNumber = "1714"
             landmarkName = "-readProfilLib"
             landmarkType = "7">
          </BreakpointContent>
@@ -1374,8 +1374,8 @@
             filePath = "rAVR.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "6508"
-            endingLineNumber = "6508"
+            startingLineNumber = "7004"
+            endingLineNumber = "7004"
             landmarkName = "-reportNeueLinie:"
             landmarkType = "7">
          </BreakpointContent>
@@ -1390,8 +1390,8 @@
             filePath = "rAVR.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "9785"
-            endingLineNumber = "9785"
+            startingLineNumber = "10281"
+            endingLineNumber = "10281"
             landmarkName = "-reportProfilTask:"
             landmarkType = "7">
          </BreakpointContent>
@@ -1406,8 +1406,8 @@
             filePath = "rAVR.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "9828"
-            endingLineNumber = "9828"
+            startingLineNumber = "10324"
+            endingLineNumber = "10324"
             landmarkName = "-reportProfilOberseiteTask:"
             landmarkType = "7">
          </BreakpointContent>
@@ -1422,8 +1422,8 @@
             filePath = "rAVR.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "9883"
-            endingLineNumber = "9883"
+            startingLineNumber = "10379"
+            endingLineNumber = "10379"
             landmarkName = "-reportProfilUnterseiteTask:"
             landmarkType = "7">
          </BreakpointContent>
@@ -1438,8 +1438,8 @@
             filePath = "rAVR.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "9944"
-            endingLineNumber = "9944"
+            startingLineNumber = "10440"
+            endingLineNumber = "10440"
             landmarkName = "-reportEdgeTask:"
             landmarkType = "7">
          </BreakpointContent>
@@ -1454,8 +1454,8 @@
             filePath = "rAVR.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "6479"
-            endingLineNumber = "6479"
+            startingLineNumber = "6975"
+            endingLineNumber = "6975"
             landmarkName = "-reportNeueLinie:"
             landmarkType = "7">
          </BreakpointContent>
@@ -1470,8 +1470,8 @@
             filePath = "rAVR.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "6503"
-            endingLineNumber = "6503"
+            startingLineNumber = "6999"
+            endingLineNumber = "6999"
             landmarkName = "-reportNeueLinie:"
             landmarkType = "7">
          </BreakpointContent>
@@ -1502,8 +1502,8 @@
             filePath = "rAVR.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "6778"
-            endingLineNumber = "6778"
+            startingLineNumber = "7274"
+            endingLineNumber = "7274"
             landmarkName = "-LibProfileingabeAktion:"
             landmarkType = "7">
          </BreakpointContent>
@@ -1518,8 +1518,8 @@
             filePath = "rAVR.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "6804"
-            endingLineNumber = "6804"
+            startingLineNumber = "7300"
+            endingLineNumber = "7300"
             landmarkName = "-LibProfileingabeAktion:"
             landmarkType = "7">
          </BreakpointContent>
@@ -1534,8 +1534,8 @@
             filePath = "rAVR.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "6845"
-            endingLineNumber = "6845"
+            startingLineNumber = "7341"
+            endingLineNumber = "7341"
             landmarkName = "-LibProfileingabeAktion:"
             landmarkType = "7">
          </BreakpointContent>
@@ -1550,8 +1550,8 @@
             filePath = "rAVR.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "7046"
-            endingLineNumber = "7046"
+            startingLineNumber = "7542"
+            endingLineNumber = "7542"
             landmarkName = "-LibProfileingabeAktion:"
             landmarkType = "7">
          </BreakpointContent>
@@ -1598,8 +1598,8 @@
             filePath = "rAVR.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "6896"
-            endingLineNumber = "6896"
+            startingLineNumber = "7392"
+            endingLineNumber = "7392"
             landmarkName = "-LibProfileingabeAktion:"
             landmarkType = "7">
          </BreakpointContent>
@@ -1614,8 +1614,8 @@
             filePath = "rAVR.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "6918"
-            endingLineNumber = "6918"
+            startingLineNumber = "7414"
+            endingLineNumber = "7414"
             landmarkName = "-LibProfileingabeAktion:"
             landmarkType = "7">
          </BreakpointContent>
@@ -1630,8 +1630,8 @@
             filePath = "rAVR.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "6936"
-            endingLineNumber = "6936"
+            startingLineNumber = "7432"
+            endingLineNumber = "7432"
             landmarkName = "-LibProfileingabeAktion:"
             landmarkType = "7">
          </BreakpointContent>
@@ -1646,8 +1646,8 @@
             filePath = "rAVR.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "6982"
-            endingLineNumber = "6982"
+            startingLineNumber = "7478"
+            endingLineNumber = "7478"
             landmarkName = "-LibProfileingabeAktion:"
             landmarkType = "7">
          </BreakpointContent>
@@ -1662,8 +1662,8 @@
             filePath = "rAVR.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "7043"
-            endingLineNumber = "7043"
+            startingLineNumber = "7539"
+            endingLineNumber = "7539"
             landmarkName = "-LibProfileingabeAktion:"
             landmarkType = "7">
          </BreakpointContent>
@@ -1678,8 +1678,8 @@
             filePath = "rAVR.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "7054"
-            endingLineNumber = "7054"
+            startingLineNumber = "7550"
+            endingLineNumber = "7550"
             landmarkName = "-LibProfileingabeAktion:"
             landmarkType = "7">
          </BreakpointContent>
@@ -1694,8 +1694,8 @@
             filePath = "rAVR.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "7106"
-            endingLineNumber = "7106"
+            startingLineNumber = "7602"
+            endingLineNumber = "7602"
             landmarkName = "-LibProfileingabeAktion:"
             landmarkType = "7">
          </BreakpointContent>
@@ -1710,8 +1710,8 @@
             filePath = "rAVR.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "7102"
-            endingLineNumber = "7102"
+            startingLineNumber = "7598"
+            endingLineNumber = "7598"
             landmarkName = "-LibProfileingabeAktion:"
             landmarkType = "7">
          </BreakpointContent>
@@ -1726,8 +1726,8 @@
             filePath = "rAVR.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "7111"
-            endingLineNumber = "7111"
+            startingLineNumber = "7607"
+            endingLineNumber = "7607"
             landmarkName = "-LibProfileingabeAktion:"
             landmarkType = "7">
          </BreakpointContent>
@@ -1742,8 +1742,8 @@
             filePath = "rAVR.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "7143"
-            endingLineNumber = "7143"
+            startingLineNumber = "7639"
+            endingLineNumber = "7639"
             landmarkName = "-LibProfileingabeAktion:"
             landmarkType = "7">
          </BreakpointContent>
@@ -1758,8 +1758,8 @@
             filePath = "rAVR.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "6972"
-            endingLineNumber = "6972"
+            startingLineNumber = "7468"
+            endingLineNumber = "7468"
             landmarkName = "-LibProfileingabeAktion:"
             landmarkType = "7">
          </BreakpointContent>
@@ -1790,8 +1790,8 @@
             filePath = "rAVR.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1328"
-            endingLineNumber = "1328"
+            startingLineNumber = "1342"
+            endingLineNumber = "1342"
             landmarkName = "-awakeFromNib"
             landmarkType = "7">
          </BreakpointContent>
@@ -1822,8 +1822,8 @@
             filePath = "rAVR.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "5414"
-            endingLineNumber = "5414"
+            startingLineNumber = "5428"
+            endingLineNumber = "5428"
             landmarkName = "-reportRumpf:"
             landmarkType = "7">
          </BreakpointContent>
@@ -1870,8 +1870,8 @@
             filePath = "rAVR.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "7659"
-            endingLineNumber = "7659"
+            startingLineNumber = "8155"
+            endingLineNumber = "8155"
             landmarkName = "-RahmenDic"
             landmarkType = "7">
          </BreakpointContent>
@@ -1886,8 +1886,8 @@
             filePath = "rAVR.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "9299"
-            endingLineNumber = "9299"
+            startingLineNumber = "9795"
+            endingLineNumber = "9795"
             landmarkName = "-reportVertikalSpiegeln:"
             landmarkType = "7">
          </BreakpointContent>
@@ -1902,8 +1902,8 @@
             filePath = "rAVR.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "9304"
-            endingLineNumber = "9304"
+            startingLineNumber = "9800"
+            endingLineNumber = "9800"
             landmarkName = "-reportVertikalSpiegeln:"
             landmarkType = "7">
          </BreakpointContent>
@@ -1918,8 +1918,8 @@
             filePath = "rAVR.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "9313"
-            endingLineNumber = "9313"
+            startingLineNumber = "9809"
+            endingLineNumber = "9809"
             landmarkName = "-reportVertikalSpiegeln:"
             landmarkType = "7">
          </BreakpointContent>
@@ -1934,8 +1934,8 @@
             filePath = "rAVR.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "5366"
-            endingLineNumber = "5366"
+            startingLineNumber = "5380"
+            endingLineNumber = "5380"
             landmarkName = "-reportRohr:"
             landmarkType = "7">
          </BreakpointContent>
@@ -1950,8 +1950,8 @@
             filePath = "rAVR.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "6045"
-            endingLineNumber = "6045"
+            startingLineNumber = "6541"
+            endingLineNumber = "6541"
             landmarkName = "-RumpfelementmitBreiteA:mitHoeheA:mitRadiusA:mitBreiteB:mitHoeheB:mitRadiusB:"
             landmarkType = "7">
          </BreakpointContent>
@@ -1966,8 +1966,8 @@
             filePath = "rAVR.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "5423"
-            endingLineNumber = "5423"
+            startingLineNumber = "5437"
+            endingLineNumber = "5437"
             landmarkName = "-reportRumpf:"
             landmarkType = "7">
          </BreakpointContent>
@@ -1998,9 +1998,25 @@
             filePath = "rAVR.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1027"
-            endingLineNumber = "1027"
+            startingLineNumber = "1032"
+            endingLineNumber = "1032"
             landmarkName = "-readCNC_PList"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F397016D-DA9D-4B37-9B0D-7390ECE2A7CE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "rAVR.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "612"
+            endingLineNumber = "612"
+            landmarkName = "-saveCNCPlist"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
