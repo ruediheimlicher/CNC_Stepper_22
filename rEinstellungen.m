@@ -858,7 +858,7 @@
 
 - (void)drawRect:(NSRect)rect
 {
-   //NSLog(@"LibGraph drawRect");
+   NSLog(@"LibGraph drawRect");
    [[NSColor whiteColor]set];
    NSRect NetzBoxRahmen=[self bounds];//NSMakeRect(NetzEcke.x,NetzEcke.y,200,100);
 	NetzBoxRahmen.size.height-=2;
@@ -2425,7 +2425,7 @@
 
 - (IBAction)reportLibPop:(id)sender
 {
-   //NSLog(@"reportLibPop index: %d",[sender indexOfSelectedItem]);
+   //NSLog(@"reportLibPop reportLibPop index: %d",[sender indexOfSelectedItem]);
    if ([sender indexOfSelectedItem])
    {
       int index=[sender indexOfSelectedItem]-1; // Item 0 ist Titel

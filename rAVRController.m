@@ -810,7 +810,7 @@ private void button4_Click(object sender, EventArgs e)
                NSLog(@"readUSB  home gemeldet");
             }break;
                
-               // Anschlag first
+            // Anschlag first
             case 0xA5:   
             {
                NSLog(@"AVRController A5 Anschlag A0");

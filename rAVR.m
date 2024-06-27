@@ -440,7 +440,7 @@ float det(float v0[],float v1[])
 
 - (void)mouseUp:(NSEvent *)event
 {
-   //NSLog(@"Pfeiltaste mouseup");
+   NSLog(@"Pfeiltaste mouseup");
    richtung=[self tag];
    NSLog(@"AVR mouseUp Pfeiltaste richtung: %d",richtung);
    /*
@@ -935,8 +935,8 @@ return returnInt;
             }
             else
             {
-               minimaldistanz = 0.8;
-               [MinimaldistanzFeld setFloatValue:0.8];
+               minimaldistanz = 1.0;
+               [MinimaldistanzFeld setFloatValue:1.0];
             }
             
             
@@ -8992,7 +8992,7 @@ return returnInt;
    NSInteger button = [alert runModal];
    
    
-   
+   button += 1000;
    
    if (button == NSAlertFirstButtonReturn) 
    {
@@ -9046,7 +9046,7 @@ return returnInt;
    }
    //NSLog(@"reportElementSichern ElementArray: %@",[ElementArray description]);
    
-   NSString* neuerName=[self inputNameMitTitel:@"Neues Element" information:@"Name des neuen Elements:" defaultValue:@"Element"];
+   NSString* neuerName=[self inputNameMitTitel:@"Neues Element" information:@"Name des neuen Elements:" defaultValue:@"neuesElement"];
    
    
    NSDictionary* neuesElementDic = [NSDictionary dictionaryWithObjectsAndKeys:ElementArray,@"elementarray",neuerName,@"name", nil];
